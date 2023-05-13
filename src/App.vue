@@ -29,17 +29,32 @@ const navMenuItems = ref([
 
 const images = ref([
   {
-    itemImageSrc: new URL('@/assets/images/gallery/rugone.png', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/rugone.png', import.meta.url).href,
-    alt: 'A picture of a rug of Kirby',
-    title: 'Kirby',
-    description: 'The pink lovable friend'
+    itemImageSrc: new URL('@/assets/images/gallery/Sonic Adventure.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/Sonic Adventure.jpg', import.meta.url).href,
+    alt: 'A picture of Sonic the Hedgehog from the cover art for the game Sonic Adventure',
+    title: 'Sonic Adventure',
+    centerPercentage: 30
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/rugtwo.png', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/rugtwo.png', import.meta.url).href,
-    alt: 'A picture of a rug of the Bada Bing sign from The Sopranos',
-    title: 'Bada Bing'
+    itemImageSrc: new URL('@/assets/images/gallery/Pool Hearts.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/Pool Hearts.jpg', import.meta.url).href,
+    alt: 'A picture of a rug that depicts a racked set of pool balls with hearts instead of numbers',
+    title: 'Pool Hearts',
+    description: 'Custom design'
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/Nice to See You Again by Yoshitomo Nara.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/Nice to See You Again by Yoshitomo Nara.jpg', import.meta.url).href,
+    alt: 'A picture of a rug rendition of Nice to See You Again by Yoshitomo Nara',
+    title: 'Nice to See You Again',
+    description: 'Rendition of Nice to See You Again by artist Yoshitomo Nara'
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/Snoopy Puffy Coat.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/Snoopy Puffy Coat.jpg', import.meta.url).href,
+    alt: 'A picture of a rug of Snoopy in a puffy coat',
+    title: 'Puffy Coat Snoopy',
+    centerPercentage: 70
   }
 ]);
 </script>

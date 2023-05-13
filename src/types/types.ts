@@ -3,5 +3,6 @@ export interface RugData {
   thumbnailImageSrc: string,
   alt: string,
   title: string,
-  description: string
+  description: string,
+  centerPercentage: number
 }

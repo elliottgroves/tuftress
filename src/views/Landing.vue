@@ -31,11 +31,12 @@ const responsiveOptions = ref([
     :responsiveOptions="responsiveOptions" 
     :numVisible="5" 
     :showItemNavigators="true"
-    :autoPlay="false"
+    :autoPlay="true"
     :circular="true">
     <template #item="slotProps" class="gallery-image">
       <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"/>
     </template>
+    <!-- TODO: image sizing -->
     <template #thumbnail="slotProps">
       <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" class="gallery-image-thumbnail"/>
     </template>
@@ -51,7 +52,6 @@ const responsiveOptions = ref([
   background-position: center center;
 }
 .p-galleria-item {
-  width: 80vw;
   aspect-ratio: 4/3;
   background: #0005;
   overflow: hidden;
