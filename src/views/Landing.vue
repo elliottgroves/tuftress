@@ -1,19 +1,14 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import Galleria from 'primevue/galleria';
+import Galleria from 'primevue/galleria'
+import { ref } from 'vue'
+import type { PropType } from 'vue'
+import type { RugData } from '@/types/types'
 
-const images = ref([
-  {
-    itemImageSrc: new URL('@/assets/images/gallery/rugone.png', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/rugone.png', import.meta.url).href,
-    alt: 'A rug of Kirby'
-  },
-  {
-    itemImageSrc: new URL('@/assets/images/gallery/rugtwo.png', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/rugtwo.png', import.meta.url).href,
-    alt: 'A rug of Kirby'
+const props = defineProps({
+  images: {
+    type: Array as PropType<RugData[]>
   }
-]);
+})
 
 const responsiveOptions = ref([
   {
@@ -32,14 +27,6 @@ const responsiveOptions = ref([
 </script>
 
 <template>
-  <!-- <Card class="mb-4">
-    <template #title>
-      <h2>About Me</h2>
-    </template>
-    <template #content>
-      <p>I'm a rug tufting artist based in Indianapolis who loves sniffing my own farts</p>
-    </template>
-  </Card> -->
   <Galleria :value="images" 
     :responsiveOptions="responsiveOptions" 
     :numVisible="5" 

@@ -1,23 +1,14 @@
 <script setup lang="ts">
 import DeferredContent from 'primevue/deferredcontent'
 import Image from 'primevue/image'
-import { ref } from "vue"
+import type { PropType } from 'vue'
+import type { RugData } from '@/types/types'
 
-const images = ref([
-  {
-    itemImageSrc: new URL('@/assets/images/gallery/rugone.png', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/rugone.png', import.meta.url).href,
-    alt: 'A picture of a rug of Kirby',
-    title: 'Kirby',
-    description: 'The pink lovable friend'
-  },
-  {
-    itemImageSrc: new URL('@/assets/images/gallery/rugtwo.png', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/rugtwo.png', import.meta.url).href,
-    alt: 'A picture of a rug of the Bada Bing sign from The Sopranos',
-    title: 'Bada Bing'
+const props = defineProps({
+  images: {
+    type: Array as PropType<RugData[]>
   }
-]);
+})
 </script>
 
 <template>

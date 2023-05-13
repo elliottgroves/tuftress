@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import Logo from '@/components/svgs/Logo.vue'
-import { ref } from "vue";
+import { ref } from 'vue'
 
-const items = ref([
+const navMenuItems = ref([
   {
     label: 'Gallery',
     icon: 'pi pi-fw pi-images',
@@ -26,10 +26,26 @@ const items = ref([
     to: { name: 'contact' }
   }
 ])
+
+const images = ref([
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/rugone.png', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/rugone.png', import.meta.url).href,
+    alt: 'A picture of a rug of Kirby',
+    title: 'Kirby',
+    description: 'The pink lovable friend'
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/rugtwo.png', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/rugtwo.png', import.meta.url).href,
+    alt: 'A picture of a rug of the Bada Bing sign from The Sopranos',
+    title: 'Bada Bing'
+  }
+]);
 </script>
 
 <template>
-  <Menubar :model="items" class="main-nav container">
+  <Menubar :model="navMenuItems" class="main-nav container">
     <template #start>
       <div class="logo-container">
         <RouterLink :to="{ name: 'landing' }">
@@ -39,7 +55,7 @@ const items = ref([
     </template>
   </Menubar>
   <div class="main-content container">
-    <RouterView/>
+    <RouterView :images="images"/>
     <footer class="text-500">
       <p>Made with ❤️ By Elliott Groves Design</p>
     </footer>
