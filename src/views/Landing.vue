@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Galleria from 'primevue/galleria'
+import Logo from '@/components/svgs/Logo.vue'
 import { ref } from 'vue'
 import type { PropType } from 'vue'
 import type { RugData } from '@/types/types'
@@ -21,12 +22,19 @@ const responsiveOptions = ref([
   },
   {
     breakpoint: '575px',
-    numVisible: 1
+    numVisible: 2
   }
-]);
+])
+
+function imageOffset(rug: RugData) {
+  if (rug.hasOwnProperty('yOffsetPercentage')) {
+    return { transform: `translateY(${rug.yOffsetPercentage}%)` }
+  }
+}
 </script>
 
 <template>
+  <Logo class="mb-4"></Logo>
   <Galleria :value="images" 
     :responsiveOptions="responsiveOptions" 
     :numVisible="5" 
@@ -34,11 +42,11 @@ const responsiveOptions = ref([
     :autoPlay="true"
     :circular="true">
     <template #item="slotProps" class="gallery-image">
-      <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"/>
+      <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" :style="imageOffset(slotProps.item)"/>
     </template>
     <!-- TODO: image sizing -->
     <template #thumbnail="slotProps">
-      <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" class="gallery-image-thumbnail"/>
+      <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" class="gallery-image-thumbnail" :style="imageOffset(slotProps.item)"/>
     </template>
   </Galleria>
 </template>
@@ -46,10 +54,6 @@ const responsiveOptions = ref([
 <style lang="scss">
 .p-galleria-item-prev {
   z-index: 2;
-}
-.gallery-image, .gallery-image-thumbnail img {
-  object-fit: cover;
-  background-position: center center;
 }
 .p-galleria-item {
   aspect-ratio: 4/3;
@@ -60,8 +64,20 @@ const responsiveOptions = ref([
     object-fit: cover;
   }
 }
-.gallery-image-thumbnail {
-  width: 12rem;
-  height: 8rem;
+.p-galleria-thumbnail-item-content {
+  width: 8rem;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .p-galleria-item {
+    aspect-ratio: 1/1;
+  }
 }
 </style>

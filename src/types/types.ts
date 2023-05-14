@@ -4,5 +4,5 @@ export interface RugData {
   alt: string,
   title: string,
   description: string,
-  centerPercentage: number
+  yOffsetPercentage?: number
 }
