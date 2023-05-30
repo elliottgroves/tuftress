@@ -36,6 +36,9 @@ const props = defineProps({
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  .rug-card {
+    background: linear-gradient(45deg, #ffe2ed, #e6e6fa);
+  }
   .rug-card, .deferred-image, .deferred-image img {
     width: min(90vw, 25rem);
   }
