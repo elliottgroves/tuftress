@@ -5,7 +5,7 @@
         <h2>About Me</h2>
       </template>
       <template #content>
-        <p>I'm a rug tufting artist based in Indianapolis who loves</p>
+        <p>I'm a rug tufting artist based in Indianapolis :)</p>
       </template>
     </Card>
   </section>
