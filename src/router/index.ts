@@ -10,22 +10,34 @@ const router = createRouter({
     {
       path: '/',
       name: 'landing',
-      component: Landing
+      component: Landing,
+      meta: {
+        title: 'The Tuftress Hand-Tufted Rugs'
+      }
     },
     {
       path: '/gallery',
       name: 'gallery',
-      component: Gallery 
+      component: Gallery,
+      meta: {
+        title: 'Gallery - The Tuftress Hand-Tufted Rugs'
+      }
     },
     {
       path: '/contact',
       name: 'contact',
-      component: Contact
+      component: Contact,
+      meta: {
+        title: 'Contact - The Tuftress Hand-Tufted Rugs'
+      }
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
+      meta: {
+        title: 'About - The Tuftress Hand-Tufted Rugs'
+      }
     }
   ]
 })

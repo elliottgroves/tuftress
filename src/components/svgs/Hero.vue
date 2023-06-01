@@ -73,7 +73,8 @@
 	width: 100%;
 	vertical-align: middle; 
 	overflow: hidden;
-  background-color: #fccc;
-  box-shadow: 0 0 30px 10px #fccc;
+  background-color: #fccb;
+  box-shadow: 0 0 30px 10px #fccb;
+  border-radius: 5rem;
 }
 </style>

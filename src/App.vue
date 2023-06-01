@@ -97,15 +97,15 @@ const navMenuItems = ref([
   flex-grow: 1;
   footer {
     margin-top: auto;
-    padding-top: 1rem;
+    padding: 3rem 0 5rem 0;
     text-align: right;
     p {
       color: #ff7070;
-      background: #ffd0d0dd;
+      background: #ffd0d0bb;
       display: inline;
       padding: 0.5rem;
-      box-shadow: 0 0 3px 5px #ffd0d0;
-      border-radius: 0.5rem;
+      box-shadow: 0 0 15px 5px #ffd0d0bb;
+      border-radius: 0.65rem;
     }
   }
 }
