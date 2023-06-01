@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Galleria from 'primevue/galleria'
-import Logo from '@/components/svgs/Logo.vue'
+import Hero from '@/components/svgs/Hero.vue'
 import { ref } from 'vue'
 import type { PropType } from 'vue'
 import type { RugData } from '@/types/types'
@@ -34,7 +34,8 @@ function imageOffset(rug: RugData) {
 </script>
 
 <template>
-  <Logo class="mb-4"></Logo>
+  <Hero class="mb-4"/>
+
   <Galleria :value="images" 
     :responsiveOptions="responsiveOptions" 
     :numVisible="5" 

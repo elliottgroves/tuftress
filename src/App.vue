@@ -100,7 +100,12 @@ const navMenuItems = ref([
     padding-top: 1rem;
     text-align: right;
     p {
-      color: #ff7777;
+      color: #ff7070;
+      background: #ffd0d0dd;
+      display: inline;
+      padding: 0.5rem;
+      box-shadow: 0 0 3px 5px #ffd0d0;
+      border-radius: 0.5rem;
     }
   }
 }

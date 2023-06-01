@@ -16,9 +16,18 @@ body, #app {
 }
 
 #app {
-    background: #ffd0d0;
     display: flex;
     flex-flow: column;
+    // Background by https://css-pattern.com/ (highly recommend!)
+    --s: 300px; /* control the size */
+    --_g: #0000 52%,#fffefe /* first color */ 54% 57%,#0000 59%; 
+    background: 
+    radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
+    radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
+    radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
+    radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
+    #ffd0d0; /* second color */
+    background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
 }
 
 *,
