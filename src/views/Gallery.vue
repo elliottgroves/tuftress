@@ -16,7 +16,7 @@ const props = defineProps({
     <DeferredContent v-for="image in images">
       <Card class="rug-card">
         <template #header>
-          <Image :src="image.itemImageSrc" :alt="image.alt" preview class="deferred-image"/>
+          <Image :src="image.itemCarouselSrc" :alt="image.alt" preview class="deferred-image"/>
         </template>
         <template #title>
           {{ image.title }}
