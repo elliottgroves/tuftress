@@ -43,9 +43,8 @@ function imageOffset(rug: RugData) {
     :autoPlay="true"
     :circular="true">
     <template #item="slotProps" class="gallery-image">
-      <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" :style="imageOffset(slotProps.item)"/>
+      <img :src="slotProps.item.itemCarouselSrc" :alt="slotProps.item.alt" :style="imageOffset(slotProps.item)"/>
     </template>
-    <!-- TODO: image sizing -->
     <template #thumbnail="slotProps">
       <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" class="gallery-image-thumbnail" :style="imageOffset(slotProps.item)"/>
     </template>
