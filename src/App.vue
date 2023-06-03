@@ -13,7 +13,7 @@ const images = ref([
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/Sonic Adventure.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/Sonic Adventure.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/Sonic Adventure.jpg', import.meta.url).href,
     alt: 'A picture of a rug of Sonic the Hedgehog from the cover art for the game Sonic Adventure',
     title: 'Sonic Adventure',
     yOffsetPercentage: 6

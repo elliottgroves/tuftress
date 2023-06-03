@@ -13,19 +13,19 @@ const props = defineProps({
 
 <template>
   <div class="gallery">
-    <Card v-for="image in images" class="rug-card">
-      <template #header>
-        <DeferredContent>
+    <DeferredContent v-for="image in images">
+      <Card class="rug-card">
+        <template #header>
           <Image :src="image.itemImageSrc" :alt="image.alt" preview class="deferred-image"/>
-        </DeferredContent>
-      </template>
-      <template #title>
-        {{ image.title }}
-      </template>
-      <template #content>
-        {{ image.description }}
-      </template>
-    </Card>
+        </template>
+        <template #title>
+          {{ image.title }}
+        </template>
+        <template #content>
+          {{ image.description }}
+        </template>
+      </Card>
+    </DeferredContent>
   </div>
 </template>
 
