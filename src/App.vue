@@ -6,7 +6,7 @@ import { ref } from 'vue'
 const images = ref([
   {
     itemImageSrc: new URL('@/assets/images/gallery/Pool Hearts.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/Pool Hearts.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/Pool Hearts.jpg', import.meta.url).href,
     alt: 'A picture of a rug that depicts a racked set of pool balls with hearts instead of numbers',
     title: 'Pool Hearts',
     description: 'Original design'
@@ -20,57 +20,57 @@ const images = ref([
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/Out of Love.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/Out of Love.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/Out of Love.jpg', import.meta.url).href,
     alt: 'A picture of a rug with a medieval flail on a pink and white concentric square background',
-    title: 'out of love',
+    title: 'Out of Love',
     description: 'Original design'
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/stamp of spring.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/stamp of spring.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/stamp of spring.jpg', import.meta.url).href,
     alt: 'A picture of a rug depicting a stamp with flowers on it',
-    title: 'stamp of spring',
+    title: 'Stamp of Spring',
     description: 'Original design'
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/Pixel Kirby.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/Pixel Kirby.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/Pixel Kirby.jpg', import.meta.url).href,
     alt: 'A picture of a rug depicting a pixel art of Kirby',
     title: 'Pixel Kirby'
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/pink leaf beetle leafin\' a leaf.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/pink leaf beetle leafin\' a leaf.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/pink leaf beetle leafin\' a leaf.jpg', import.meta.url).href,
     alt: 'A picture of a rug depicting pink beetle crawling on a plant',
-    title: 'pink leaf beetle leafin\' a leaf',
+    title: 'Pink Leaf Beetle',
     yOffsetPercentage: -10
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/Nice to See You Again by Yoshitomo Nara.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/Nice to See You Again by Yoshitomo Nara.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/Nice to See You Again by Yoshitomo Nara.jpg', import.meta.url).href,
     alt: 'A picture of a rug rendition of Nice to See You Again by Yoshitomo Nara',
     title: 'Nice to See You Again',
     description: 'Rendition of Nice to See You Again by artist Yoshitomo Nara'
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/Snoopy Puffy Coat.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/Snoopy Puffy Coat.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/Snoopy Puffy Coat.jpg', import.meta.url).href,
     alt: 'A picture of a rug of Snoopy in a puffy coat',
     title: 'Puffy Coat Snoopy',
     yOffsetPercentage: -16
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/Felix.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/Felix.jpg', import.meta.url).href,
-    alt: 'A picture of a rug of Felix the Cat',
-    title: 'Felix',
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/Felix.jpg', import.meta.url).href,
+    alt: 'A picture of a rug of Felix the Cat giving the finger',
+    title: 'Flick You Felix',
     yOffsetPercentage: -9
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/A Vintage Sandylion Sticker.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/A Vintage Sandylion Sticker.jpg', import.meta.url).href,
-    alt: 'A picture of a rug rendition of a vintage Sandylion sticker',
-    title: 'a vintage Sandylion sticker',
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/A Vintage Sandylion Sticker.jpg', import.meta.url).href,
+    alt: 'A picture of a rug rendition of a vintage Sandylion sticker of a green cat',
+    title: 'Vintage Sandylion sticker',
     yOffsetPercentage: -5
   }
 ])
