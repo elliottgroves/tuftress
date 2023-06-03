@@ -5,18 +5,45 @@ import { ref } from 'vue'
 
 const images = ref([
   {
-    itemImageSrc: new URL('@/assets/images/gallery/Sonic Adventure.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/gallery/Sonic Adventure.jpg', import.meta.url).href,
-    alt: 'A picture of Sonic the Hedgehog from the cover art for the game Sonic Adventure',
-    title: 'Sonic Adventure',
-    yOffsetPercentage: 6
-  },
-  {
     itemImageSrc: new URL('@/assets/images/gallery/Pool Hearts.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/gallery/Pool Hearts.jpg', import.meta.url).href,
     alt: 'A picture of a rug that depicts a racked set of pool balls with hearts instead of numbers',
     title: 'Pool Hearts',
-    description: 'Custom design'
+    description: 'Original design'
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/Sonic Adventure.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/Sonic Adventure.jpg', import.meta.url).href,
+    alt: 'A picture of a rug of Sonic the Hedgehog from the cover art for the game Sonic Adventure',
+    title: 'Sonic Adventure',
+    yOffsetPercentage: 6
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/Out of Love.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/Out of Love.jpg', import.meta.url).href,
+    alt: 'A picture of a rug with a medieval flail on a pink and white concentric square background',
+    title: 'out of love',
+    description: 'Original design'
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/stamp of spring.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/stamp of spring.jpg', import.meta.url).href,
+    alt: 'A picture of a rug depicting a stamp with flowers on it',
+    title: 'stamp of spring',
+    description: 'Original design'
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/Pixel Kirby.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/Pixel Kirby.jpg', import.meta.url).href,
+    alt: 'A picture of a rug depicting a pixel art of Kirby',
+    title: 'Pixel Kirby'
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/pink leaf beetle leafin\' a leaf.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/pink leaf beetle leafin\' a leaf.jpg', import.meta.url).href,
+    alt: 'A picture of a rug depicting pink beetle crawling on a plant',
+    title: 'pink leaf beetle leafin\' a leaf',
+    yOffsetPercentage: -10
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/Nice to See You Again by Yoshitomo Nara.jpg', import.meta.url).href,
@@ -31,6 +58,20 @@ const images = ref([
     alt: 'A picture of a rug of Snoopy in a puffy coat',
     title: 'Puffy Coat Snoopy',
     yOffsetPercentage: -16
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/Felix.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/Felix.jpg', import.meta.url).href,
+    alt: 'A picture of a rug of Felix the Cat',
+    title: 'Felix',
+    yOffsetPercentage: -9
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/A Vintage Sandylion Sticker.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/gallery/A Vintage Sandylion Sticker.jpg', import.meta.url).href,
+    alt: 'A picture of a rug rendition of a vintage Sandylion sticker',
+    title: 'a vintage Sandylion sticker',
+    yOffsetPercentage: -5
   }
 ])
 
@@ -72,7 +113,7 @@ const navMenuItems = ref([
   <div class="main-content container">
     <RouterView :images="images"/>
     <footer class="text-500">
-      <p>Made with ❤️ By Elliott Groves Design</p>
+      <p>Made with ❤️ By <a href="https://elliottgrov.es">Elliott Groves Design</a></p>
     </footer>
   </div>
 </template>
@@ -106,6 +147,9 @@ const navMenuItems = ref([
       padding: 0.5rem;
       box-shadow: 0 0 15px 5px #ffd0d0bb;
       border-radius: 0.65rem;
+    }
+    a {
+      color: #ff7070;
     }
   }
 }
