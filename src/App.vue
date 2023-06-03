@@ -26,6 +26,13 @@ const images = ref([
     description: 'Original design'
   },
   {
+    itemImageSrc: new URL('@/assets/images/gallery/grape soda.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/grape soda.jpg', import.meta.url).href,
+    alt: 'A picture of a rug in the style of a soda cap, with Fritz the Cat going googly eyed for the soda',
+    title: 'Grape Soda',
+    yOffsetPercentage: -3
+  },
+  {
     itemImageSrc: new URL('@/assets/images/gallery/stamp of spring.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/stamp of spring.jpg', import.meta.url).href,
     alt: 'A picture of a rug depicting a stamp with flowers on it',
@@ -33,10 +40,11 @@ const images = ref([
     description: 'Original design'
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/Pixel Kirby.jpg', import.meta.url).href,
-    thumbnailImageSrc: new URL('@/assets/images/thumbnails/Pixel Kirby.jpg', import.meta.url).href,
-    alt: 'A picture of a rug depicting a pixel art of Kirby',
-    title: 'Pixel Kirby'
+    itemImageSrc: new URL('@/assets/images/gallery/from the bachelors pad.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/from the bachelors pad.jpg', import.meta.url).href,
+    alt: 'A picture of a rug of a frog peeping over a lilypad',
+    title: 'From the Bachelor\'s Pad',
+    description: 'Original design'
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/pink leaf beetle leafin\' a leaf.jpg', import.meta.url).href,
@@ -44,6 +52,12 @@ const images = ref([
     alt: 'A picture of a rug depicting pink beetle crawling on a plant',
     title: 'Pink Leaf Beetle',
     yOffsetPercentage: -10
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/Pixel Kirby.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/Pixel Kirby.jpg', import.meta.url).href,
+    alt: 'A picture of a rug depicting a pixel art of Kirby',
+    title: 'Pixel Kirby'
   },
   {
     itemImageSrc: new URL('@/assets/images/gallery/Nice to See You Again by Yoshitomo Nara.jpg', import.meta.url).href,
@@ -70,8 +84,22 @@ const images = ref([
     itemImageSrc: new URL('@/assets/images/gallery/A Vintage Sandylion Sticker.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/A Vintage Sandylion Sticker.jpg', import.meta.url).href,
     alt: 'A picture of a rug rendition of a vintage Sandylion sticker of a green cat',
-    title: 'Vintage Sandylion sticker',
+    title: 'Vintage Sandylion green cat sticker',
     yOffsetPercentage: -5
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/rainbow sandylion.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/rainbow sandylion.jpg', import.meta.url).href,
+    alt: 'A picture of a rug rendition of a vintage Sandylion sticker of a rainbow cat',
+    title: 'Vintage Sandylion rainbow cat sticker',
+    yOffsetPercentage: 5
+  },
+  {
+    itemImageSrc: new URL('@/assets/images/gallery/blob pool.jpg', import.meta.url).href,
+    thumbnailImageSrc: new URL('@/assets/images/thumbnails/blob pool.jpg', import.meta.url).href,
+    alt: 'A picture of a white abstract rug with gold and blue blob shapes',
+    title: 'Blob Pool',
+    yOffsetPercentage: 2
   }
 ])
 
