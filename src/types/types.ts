@@ -1,5 +1,4 @@
 export interface RugData {
-  itemImageSrc: string,
   itemCarouselSrc: string,
   thumbnailImageSrc: string,
   alt: string,

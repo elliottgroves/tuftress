@@ -5,7 +5,6 @@ import { ref } from 'vue'
 
 const images = ref([
   {
-    itemImageSrc: new URL('@/assets/images/gallery/Pool Hearts.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/Pool Hearts.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/Pool Hearts.jpg', import.meta.url).href,
     alt: 'A picture of a rug that depicts a racked set of pool balls with hearts instead of numbers',
@@ -13,7 +12,6 @@ const images = ref([
     description: 'Original design'
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/Sonic Adventure.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/Sonic Adventure.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/Sonic Adventure.jpg', import.meta.url).href,
     alt: 'A picture of a rug of Sonic the Hedgehog from the cover art for the game Sonic Adventure',
@@ -21,7 +19,6 @@ const images = ref([
     yOffsetPercentage: 6
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/Out of Love.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/Out of Love.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/Out of Love.jpg', import.meta.url).href,
     alt: 'A picture of a rug with a medieval flail on a pink and white concentric square background',
@@ -29,7 +26,6 @@ const images = ref([
     description: 'Original design'
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/grape soda.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/grape soda.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/grape soda.jpg', import.meta.url).href,
     alt: 'A picture of a rug in the style of a soda cap, with Fritz the Cat going googly eyed for the soda',
@@ -37,7 +33,6 @@ const images = ref([
     yOffsetPercentage: -3
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/stamp of spring.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/stamp of spring.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/stamp of spring.jpg', import.meta.url).href,
     alt: 'A picture of a rug depicting a stamp with flowers on it',
@@ -45,7 +40,6 @@ const images = ref([
     description: 'Original design'
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/from the bachelors pad.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/from the bachelors pad.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/from the bachelors pad.jpg', import.meta.url).href,
     alt: 'A picture of a rug of a frog peeping over a lilypad',
@@ -53,7 +47,6 @@ const images = ref([
     description: 'Original design'
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/pink leaf beetle leafin\' a leaf.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/pink leaf beetle leafin\' a leaf.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/pink leaf beetle leafin\' a leaf.jpg', import.meta.url).href,
     alt: 'A picture of a rug depicting pink beetle crawling on a plant',
@@ -61,14 +54,12 @@ const images = ref([
     yOffsetPercentage: -10
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/Pixel Kirby.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/Pixel Kirby.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/Pixel Kirby.jpg', import.meta.url).href,
     alt: 'A picture of a rug depicting a pixel art of Kirby',
     title: 'Pixel Kirby'
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/Nice to See You Again by Yoshitomo Nara.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/Nice to See You Again by Yoshitomo Nara.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/Nice to See You Again by Yoshitomo Nara.jpg', import.meta.url).href,
     alt: 'A picture of a rug rendition of Nice to See You Again by Yoshitomo Nara',
@@ -76,7 +67,6 @@ const images = ref([
     description: 'Rendition of Nice to See You Again by artist Yoshitomo Nara'
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/Snoopy Puffy Coat.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/Snoopy Puffy Coat.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/Snoopy Puffy Coat.jpg', import.meta.url).href,
     alt: 'A picture of a rug of Snoopy in a puffy coat',
@@ -84,7 +74,6 @@ const images = ref([
     yOffsetPercentage: -16
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/Felix.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/Felix.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/Felix.jpg', import.meta.url).href,
     alt: 'A picture of a rug of Felix the Cat giving the finger',
@@ -92,7 +81,6 @@ const images = ref([
     yOffsetPercentage: -9
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/A Vintage Sandylion Sticker.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/A Vintage Sandylion Sticker.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/A Vintage Sandylion Sticker.jpg', import.meta.url).href,
     alt: 'A picture of a rug rendition of a vintage Sandylion sticker of a green cat',
@@ -100,7 +88,6 @@ const images = ref([
     yOffsetPercentage: -5
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/rainbow sandylion.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/rainbow sandylion.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/rainbow sandylion.jpg', import.meta.url).href,
     alt: 'A picture of a rug rendition of a vintage Sandylion sticker of a rainbow cat',
@@ -108,7 +95,6 @@ const images = ref([
     yOffsetPercentage: 5
   },
   {
-    itemImageSrc: new URL('@/assets/images/gallery/blob pool.jpg', import.meta.url).href,
     itemCarouselSrc: new URL('@/assets/images/carousel/blob pool.jpg', import.meta.url).href,
     thumbnailImageSrc: new URL('@/assets/images/thumbnails/blob pool.jpg', import.meta.url).href,
     alt: 'A picture of a white abstract rug with gold and blue blob shapes',
